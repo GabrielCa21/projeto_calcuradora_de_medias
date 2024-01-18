@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="/images/logo.png" alt="logo">
+            <h1>Calculadora De Médias</h1>
+        </header>
+        <form id="form-atividade">
+            <input type="text" id="nome-atividade" placeholder="Nome da Atividade" required>
+            <input type="number" id="nota-atividade" placeholder="Nota da Atividade" min="0" max="10" required>
+            <button type="submit">Adcionar</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome da Atividade</th>
+                    <th>Nota</th>
+                    <th>Aprovado?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Média Final</td>
+                    <td id="mediafinalvalor">...</td>
+                    <td id="mediafinalresultado"><span class="resultado"></span></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
